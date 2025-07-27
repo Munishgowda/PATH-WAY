@@ -1,0 +1,38 @@
+# Jupyter notebook checkpoints
+
+# Ignore the downloaded WordPress core inside each env
+envs/*/wordpress/
+
+# But keep docker-compose files
+!envs/*/docker-compose.yml
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code settings (optional)
+.vscode/
+
+# Logs and reports (if auto-generated or sensitive)
+
+
+# Docker containers/volumes (optional, if not needed for tracking)
+**/wordpress/wp-content/uploads/
+**/wordpress/wp-config.php
+**/wordpress/.htaccess
+
+# Data files (if downloaded/generated)
+data/wordpress-file-upload.4*
+
+# CSVs or output files from scripts (optional)
+*.csv
+
+# Secrets or config (if you store credentials locally)
+.env
